@@ -6,598 +6,6 @@
             "categoryOptionComboAttribute": false,
             "categoryOptionGroupAttribute": false,
             "categoryOptionGroupSetAttribute": false,
-            "code": "GEN_LIB_TRK_ICD10",
-            "constantAttribute": false,
-            "dataElementAttribute": false,
-            "dataElementGroupSetAttribute": false,
-            "description": "ICD-10 code",
-            "documentAttribute": false,
-            "eventChartAttribute": false,
-            "eventReportAttribute": false,
-            "id": "iehcXLBKVWM",
-            "indicatorAttribute": false,
-            "legendSetAttribute": false,
-            "mandatory": false,
-            "mapAttribute": false,
-            "name": "Code (ICD-10)",
-            "objectTypes": [
-                "TRACKED_ENTITY_ATTRIBUTE"
-            ],
-            "optionAttribute": false,
-            "optionSetAttribute": false,
-            "organisationUnitAttribute": false,
-            "programAttribute": false,
-            "programIndicatorAttribute": false,
-            "programStageAttribute": false,
-            "relationshipTypeAttribute": false,
-            "sectionAttribute": false,
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "InUw66o0Z0g": {
-                        "access": "r-------",
-                        "id": "InUw66o0Z0g"
-                    },
-                    "PVHgNuFZ5AK": {
-                        "access": "rw------",
-                        "id": "PVHgNuFZ5AK"
-                    },
-                    "t0H2my4QMUH": {
-                        "access": "r-------",
-                        "id": "t0H2my4QMUH"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "ICD-10",
-            "sqlViewAttribute": false,
-            "trackedEntityAttributeAttribute": true,
-            "trackedEntityTypeAttribute": false,
-            "translations": [
-                {
-                    "locale": "ar_EG",
-                    "property": "DESCRIPTION",
-                    "value": "رمز ICD-10 "
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "DESCRIPTION",
-                    "value": "رمز ICD-10 "
-                },
-                {
-                    "locale": "es",
-                    "property": "NAME",
-                    "value": "Código (ICD-10)"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "NAME",
-                    "value": "رمز (ICD-10)"
-                },
-                {
-                    "locale": "ru",
-                    "property": "SHORT_NAME",
-                    "value": "МКБ-10"
-                },
-                {
-                    "locale": "ar",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "cs",
-                    "property": "DESCRIPTION",
-                    "value": "ICD-10 kód"
-                },
-                {
-                    "locale": "cs",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "ar",
-                    "property": "DESCRIPTION",
-                    "value": "رمز ICD-10 "
-                },
-                {
-                    "locale": "ru",
-                    "property": "DESCRIPTION",
-                    "value": "Код МКБ-10"
-                },
-                {
-                    "locale": "es",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "Code (CIM-10)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "DESCRIPTION",
-                    "value": "Code CIM-10"
-                },
-                {
-                    "locale": "ru",
-                    "property": "NAME",
-                    "value": "Код (МКБ-10)"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "SHORT_NAME",
-                    "value": "CIE-10"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "NAME",
-                    "value": "Código (ICD-10)"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "NAME",
-                    "value": "رمز (ICD-10)"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "DESCRIPTION",
-                    "value": "رمز ICD-10 "
-                },
-                {
-                    "locale": "fr",
-                    "property": "SHORT_NAME",
-                    "value": "CIM-10"
-                },
-                {
-                    "locale": "es",
-                    "property": "DESCRIPTION",
-                    "value": "Código ICD-10"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "NAME",
-                    "value": "رمز (ICD-10)"
-                },
-                {
-                    "locale": "cs",
-                    "property": "NAME",
-                    "value": "Kód (ICD-10)"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "DESCRIPTION",
-                    "value": "Código ICD-10"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "SHORT_NAME",
-                    "value": "ICD-10"
-                },
-                {
-                    "locale": "ar",
-                    "property": "NAME",
-                    "value": "رمز (ICD-10)"
-                }
-            ],
-            "unique": true,
-            "userAttribute": false,
-            "validationRuleAttribute": false,
-            "validationRuleGroupAttribute": false,
-            "valueType": "TEXT",
-            "visualizationAttribute": false
-        },
-        {
-            "categoryAttribute": false,
-            "categoryOptionAttribute": false,
-            "categoryOptionComboAttribute": false,
-            "categoryOptionGroupAttribute": false,
-            "categoryOptionGroupSetAttribute": false,
-            "code": "GEN_LIB_TRK_LOINC",
-            "constantAttribute": false,
-            "dataElementAttribute": false,
-            "dataElementGroupSetAttribute": false,
-            "description": "Loinc code",
-            "documentAttribute": false,
-            "eventChartAttribute": false,
-            "eventReportAttribute": false,
-            "id": "mpXON5igCG1",
-            "indicatorAttribute": false,
-            "legendSetAttribute": false,
-            "mandatory": false,
-            "mapAttribute": false,
-            "name": "Code (Loinc)",
-            "objectTypes": [
-                "TRACKED_ENTITY_ATTRIBUTE"
-            ],
-            "optionAttribute": false,
-            "optionSetAttribute": false,
-            "organisationUnitAttribute": false,
-            "programAttribute": false,
-            "programIndicatorAttribute": false,
-            "programStageAttribute": false,
-            "relationshipTypeAttribute": false,
-            "sectionAttribute": false,
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "InUw66o0Z0g": {
-                        "access": "r-------",
-                        "id": "InUw66o0Z0g"
-                    },
-                    "PVHgNuFZ5AK": {
-                        "access": "rw------",
-                        "id": "PVHgNuFZ5AK"
-                    },
-                    "t0H2my4QMUH": {
-                        "access": "r-------",
-                        "id": "t0H2my4QMUH"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "Loinc",
-            "sqlViewAttribute": false,
-            "trackedEntityAttributeAttribute": true,
-            "trackedEntityTypeAttribute": false,
-            "translations": [
-                {
-                    "locale": "ar_IQ",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "NAME",
-                    "value": "رمز (Loinc)"
-                },
-                {
-                    "locale": "cs",
-                    "property": "DESCRIPTION",
-                    "value": "Loinc kód"
-                },
-                {
-                    "locale": "ar",
-                    "property": "NAME",
-                    "value": "رمز (Loinc)"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ru",
-                    "property": "NAME",
-                    "value": "Код (Loinc)"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "DESCRIPTION",
-                    "value": "رمز Loinc"
-                },
-                {
-                    "locale": "cs",
-                    "property": "NAME",
-                    "value": "Kód (Loinc)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "code (LOINC)"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "NAME",
-                    "value": "رمز (Loinc)"
-                },
-                {
-                    "locale": "ru",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "es",
-                    "property": "NAME",
-                    "value": "Código (Loinc)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "SHORT_NAME",
-                    "value": "LOINC"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "DESCRIPTION",
-                    "value": "Código Loinc"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "NAME",
-                    "value": "رمز (Loinc)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "DESCRIPTION",
-                    "value": "code LOINC"
-                },
-                {
-                    "locale": "es",
-                    "property": "DESCRIPTION",
-                    "value": "Código Loinc"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "NAME",
-                    "value": "Código (Loinc)"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "DESCRIPTION",
-                    "value": "رمز Loinc"
-                },
-                {
-                    "locale": "es",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "cs",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ar",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "DESCRIPTION",
-                    "value": "رمز Loinc"
-                },
-                {
-                    "locale": "ru",
-                    "property": "DESCRIPTION",
-                    "value": "Код Loinc"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "SHORT_NAME",
-                    "value": "Loinc"
-                },
-                {
-                    "locale": "ar",
-                    "property": "DESCRIPTION",
-                    "value": "رمز Loinc"
-                }
-            ],
-            "unique": true,
-            "userAttribute": false,
-            "validationRuleAttribute": false,
-            "validationRuleGroupAttribute": false,
-            "valueType": "TEXT",
-            "visualizationAttribute": false
-        },
-        {
-            "categoryAttribute": false,
-            "categoryOptionAttribute": false,
-            "categoryOptionComboAttribute": false,
-            "categoryOptionGroupAttribute": false,
-            "categoryOptionGroupSetAttribute": false,
-            "code": "GEN_LIB_TRK_SNOMED",
-            "constantAttribute": false,
-            "dataElementAttribute": false,
-            "dataElementGroupSetAttribute": false,
-            "description": "SNOMED code",
-            "documentAttribute": false,
-            "eventChartAttribute": false,
-            "eventReportAttribute": false,
-            "id": "I6u65yRc0ct",
-            "indicatorAttribute": false,
-            "legendSetAttribute": false,
-            "mandatory": false,
-            "mapAttribute": false,
-            "name": "Code (SNOMED)",
-            "objectTypes": [
-                "TRACKED_ENTITY_ATTRIBUTE"
-            ],
-            "optionAttribute": false,
-            "optionSetAttribute": false,
-            "organisationUnitAttribute": false,
-            "programAttribute": false,
-            "programIndicatorAttribute": false,
-            "programStageAttribute": false,
-            "relationshipTypeAttribute": false,
-            "sectionAttribute": false,
-            "sharing": {
-                "external": false,
-                "owner": "vUeLeQMSwhN",
-                "public": "r-------",
-                "userGroups": {
-                    "InUw66o0Z0g": {
-                        "access": "r-------",
-                        "id": "InUw66o0Z0g"
-                    },
-                    "PVHgNuFZ5AK": {
-                        "access": "rw------",
-                        "id": "PVHgNuFZ5AK"
-                    },
-                    "t0H2my4QMUH": {
-                        "access": "r-------",
-                        "id": "t0H2my4QMUH"
-                    }
-                },
-                "users": {}
-            },
-            "shortName": "SNOMED",
-            "sqlViewAttribute": false,
-            "trackedEntityAttributeAttribute": true,
-            "trackedEntityTypeAttribute": false,
-            "translations": [
-                {
-                    "locale": "ar",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "fr",
-                    "property": "DESCRIPTION",
-                    "value": "code SNOMED"
-                },
-                {
-                    "locale": "ar",
-                    "property": "DESCRIPTION",
-                    "value": "رمز SNOMED"
-                },
-                {
-                    "locale": "cs",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ru",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "NAME",
-                    "value": "رمز (SNOMED)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "NAME",
-                    "value": "رمز (SNOMED)"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "DESCRIPTION",
-                    "value": "Código SNOMED"
-                },
-                {
-                    "locale": "cs",
-                    "property": "DESCRIPTION",
-                    "value": "SNOMED kód"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "NAME",
-                    "value": "Código (SNOMED)"
-                },
-                {
-                    "locale": "es_US",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "NAME",
-                    "value": "رمز (SNOMED)"
-                },
-                {
-                    "locale": "es",
-                    "property": "DESCRIPTION",
-                    "value": "Código SNOMED"
-                },
-                {
-                    "locale": "es",
-                    "property": "NAME",
-                    "value": "Código (SNOMED)"
-                },
-                {
-                    "locale": "ru",
-                    "property": "NAME",
-                    "value": "Код (SNOMED)"
-                },
-                {
-                    "locale": "fr",
-                    "property": "NAME",
-                    "value": "Code (SNOMED)"
-                },
-                {
-                    "locale": "ar_IQ",
-                    "property": "DESCRIPTION",
-                    "value": "رمز SNOMED"
-                },
-                {
-                    "locale": "ar_EG",
-                    "property": "DESCRIPTION",
-                    "value": "رمز SNOMED"
-                },
-                {
-                    "locale": "cs",
-                    "property": "NAME",
-                    "value": "Kód (SNOMED)"
-                },
-                {
-                    "locale": "ar",
-                    "property": "NAME",
-                    "value": "رمز (SNOMED)"
-                },
-                {
-                    "locale": "es",
-                    "property": "SHORT_NAME",
-                    "value": "SNOMED"
-                },
-                {
-                    "locale": "ar_SD",
-                    "property": "DESCRIPTION",
-                    "value": "رمز SNOMED"
-                }
-            ],
-            "unique": true,
-            "userAttribute": false,
-            "validationRuleAttribute": false,
-            "validationRuleGroupAttribute": false,
-            "valueType": "TEXT",
-            "visualizationAttribute": false
-        },
-        {
-            "categoryAttribute": false,
-            "categoryOptionAttribute": false,
-            "categoryOptionComboAttribute": false,
-            "categoryOptionGroupAttribute": false,
-            "categoryOptionGroupSetAttribute": false,
             "code": "DATA_ELEMENT_AGG",
             "constantAttribute": false,
             "dataElementAttribute": false,
@@ -2033,10 +1441,10 @@
             "attributeValues": [],
             "categoryOptions": [
                 {
-                    "id": "NdavvgfkgR1"
+                    "id": "b8y2mBp5ysN"
                 },
                 {
-                    "id": "b8y2mBp5ysN"
+                    "id": "NdavvgfkgR1"
                 }
             ],
             "code": "GEN_LIB_AGG",
@@ -5733,14 +5141,6 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "eNjRq3cvoUR"
-                    },
-                    "dataSet": {
-                        "id": "pXSmPkJDv6e"
-                    }
-                },
-                {
-                    "dataElement": {
                         "id": "VClZRYb6h1I"
                     },
                     "dataSet": {
@@ -5749,7 +5149,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "tyTlAqfDF7m"
+                        "id": "nMiDwVPJj6E"
                     },
                     "dataSet": {
                         "id": "pXSmPkJDv6e"
@@ -5765,7 +5165,15 @@
                 },
                 {
                     "dataElement": {
-                        "id": "nMiDwVPJj6E"
+                        "id": "tyTlAqfDF7m"
+                    },
+                    "dataSet": {
+                        "id": "pXSmPkJDv6e"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "eNjRq3cvoUR"
                     },
                     "dataSet": {
                         "id": "pXSmPkJDv6e"
@@ -5826,7 +5234,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "YuKeSovSg5T"
+                        "id": "U7h9YqLrkS0"
                     },
                     "dataSet": {
                         "id": "WkqdoiTNQ3n"
@@ -5834,7 +5242,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "U7h9YqLrkS0"
+                        "id": "YuKeSovSg5T"
                     },
                     "dataSet": {
                         "id": "WkqdoiTNQ3n"
@@ -5895,7 +5303,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "HM1GaB8OeBs"
+                        "id": "beVdvBc2tdE"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5911,7 +5319,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "MbvDwWwC72C"
+                        "id": "vvJohC2z6ek"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5919,7 +5327,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "ZKv35dvmM3f"
+                        "id": "zIOpzjXfF9x"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5927,7 +5335,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "dPq6fpJGC5v"
+                        "id": "S67LodUzwql"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5943,7 +5351,23 @@
                 },
                 {
                     "dataElement": {
-                        "id": "beVdvBc2tdE"
+                        "id": "uvBVi8fcTOK"
+                    },
+                    "dataSet": {
+                        "id": "R6ZrWaUVCR1"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "dPq6fpJGC5v"
+                    },
+                    "dataSet": {
+                        "id": "R6ZrWaUVCR1"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "HM1GaB8OeBs"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5959,7 +5383,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "zIOpzjXfF9x"
+                        "id": "ZKv35dvmM3f"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -5983,23 +5407,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "S67LodUzwql"
-                    },
-                    "dataSet": {
-                        "id": "R6ZrWaUVCR1"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "vvJohC2z6ek"
-                    },
-                    "dataSet": {
-                        "id": "R6ZrWaUVCR1"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "uvBVi8fcTOK"
+                        "id": "MbvDwWwC72C"
                     },
                     "dataSet": {
                         "id": "R6ZrWaUVCR1"
@@ -6129,7 +5537,7 @@
             "dataSetElements": [
                 {
                     "dataElement": {
-                        "id": "io7x9AY64FO"
+                        "id": "nJ88GbrqPIa"
                     },
                     "dataSet": {
                         "id": "G7vxmkCXOn4"
@@ -6138,14 +5546,6 @@
                 {
                     "dataElement": {
                         "id": "pTNnkiw46gv"
-                    },
-                    "dataSet": {
-                        "id": "G7vxmkCXOn4"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "pJPVFbrqPIa"
                     },
                     "dataSet": {
                         "id": "G7vxmkCXOn4"
@@ -6169,31 +5569,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "F4enkiw46gv"
-                    },
-                    "dataSet": {
-                        "id": "G7vxmkCXOn4"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "dL6ESgTt7gJ"
-                    },
-                    "dataSet": {
-                        "id": "G7vxmkCXOn4"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "nJ88GbrqPIa"
-                    },
-                    "dataSet": {
-                        "id": "G7vxmkCXOn4"
-                    }
-                },
-                {
-                    "dataElement": {
-                        "id": "nsPVFbrqwvZ"
+                        "id": "io7x9AY64FO"
                     },
                     "dataSet": {
                         "id": "G7vxmkCXOn4"
@@ -6209,7 +5585,39 @@
                 },
                 {
                     "dataElement": {
+                        "id": "PdBvH97r9iy"
+                    },
+                    "dataSet": {
+                        "id": "G7vxmkCXOn4"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "F4enkiw46gv"
+                    },
+                    "dataSet": {
+                        "id": "G7vxmkCXOn4"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "pJPVFbrqPIa"
+                    },
+                    "dataSet": {
+                        "id": "G7vxmkCXOn4"
+                    }
+                },
+                {
+                    "dataElement": {
                         "id": "TA7AnoNsdf4"
+                    },
+                    "dataSet": {
+                        "id": "G7vxmkCXOn4"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "dL6ESgTt7gJ"
                     },
                     "dataSet": {
                         "id": "G7vxmkCXOn4"
@@ -6225,7 +5633,7 @@
                 },
                 {
                     "dataElement": {
-                        "id": "PdBvH97r9iy"
+                        "id": "nsPVFbrqwvZ"
                     },
                     "dataSet": {
                         "id": "G7vxmkCXOn4"
@@ -9270,7 +8678,7 @@
         "DHIS2Build": "dfd7f48",
         "DHIS2Version": "2.40.5",
         "code": "IMM_BCU",
-        "description": "Immunization (EPI) Big Catch-Up",
+        "description": "Immunization (EPI) Big Catch-Up (complete)",
         "healthAreaCode": "IMM",
         "healthAreaName": "Immunization",
         "lastUpdated": "20250117T105848",
