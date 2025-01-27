@@ -1,6 +1,6 @@
-# Neglected Tropical Diseases (NTD) Installation Guide { #ntd-agg-installation }
+# Immunization: Big Catch-Up Installation Guide { #imm-bcu-installation }
 
-This document includes an installation guide for the Neglected Tropical Diseases package.
+This document includes an installation guide for the Big-Catch Up package.
 
 System default language: English
 
@@ -10,8 +10,8 @@ The metadata reference and metadata json files provide technical details on pack
 
 The metadata package consists of the following modules:
 
-- Neglected Tropical Diseases
-- Neglected Tropical Diseases (dashboard)
+- Immunization (EPI) Big Catch-Up: Complete
+- Immunization (EPI) Big Catch-Up: Dashboard
 
 ## Installation
 
@@ -169,9 +169,9 @@ Please refer to the [DHIS2 documentation](#sharing) for more information on shar
 
 Three core user groups are included in the packages:
 
-- NTD - Access (view metadata/view data)
-- NTD - Admin (view and edit metadata/no access to data)
-- NTD - Data Capture - (view metadata/capture and view data)
+- IMM_BCU - Access (view metadata/view data)
+- IMM_BCU - Admin (view and edit metadata/no access to data)
+- IMM_BCU - Data Capture - (view metadata/capture and view data)
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in
 the package may be adjusted depending on the set-up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more
@@ -240,4 +240,4 @@ indicators.
 ## Removing metadata
 
 In order to keep your instance clean and avoid errors, it is recommended that you remove the unnecessary metadata from
-your instance. Removing unnecessary metadat requires advanced knowledge of DHIS2 and various dependencies.
+your instance. Removing unnecessary metadata requires advanced knowledge of DHIS2 and various dependencies.
