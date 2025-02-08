@@ -66,7 +66,7 @@ As part of the routine immunization framework, the population of ZD and UI child
 
 ## EIR Adaptation for BCU
 
-As mentioned above, the BCU DHIS2 toolkit is designed to support HIS that report BCU within the RI framework, as per global guidance (link). This section describes how the Electronic Immunization Registry (EIR) can be adapted to complement BCU activities within an integrated RI information system.
+As mentioned above, the BCU DHIS2 toolkit is designed to support HIS that report BCU within the RI framework, as per global guidance. This section describes how the Electronic Immunization Registry (EIR) can be adapted to complement BCU activities within an integrated RI information system.
 
 ### EIR Overview
 
@@ -76,7 +76,9 @@ The EIR employs the DHIS2 Tracker data model to register and follow up individua
 
 Data entry for non-routine vaccinations, or those that are not due according to the national schedule, can be “unlocked” at each visit if the reason is documented in the visit record.
 
-More details can be found at [EIR system design guide](https://docs.dhis2.org/en/implement/health/immunization/eir-immunization-eregistry/design.html) \### Preconditions for Adapting EIR in BCU context
+More details can be found at [EIR system design guide](https://docs.dhis2.org/en/implement/health/immunization/eir-immunization-eregistry/design.html) 
+
+### Preconditions for Adapting EIR in BCU context
 
 When adapting and localizing Electronic Immunization Registry (EIR) metadata to the country’s health setting, it is essential to first assess how BCU and RI activities are being aggregated and reported. Mixed systems, where the same antigen might be reported as either BCU or routine, should be addressed promptly, as they risk under- or over-counting BCU activities, leading to inaccuracies in output indicators.
 
