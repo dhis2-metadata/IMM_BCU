@@ -128,7 +128,7 @@ As of version 2.41, “multi-text” is available as a data element value type i
 
 #### Android version and skip logic
 
-Many rural health centres with limited internet access, can benefit from the offline data entry capabilities of the DHIS2 Capture App on Android devices. However, a bug in the Android app related to the function `d2:lastEventDate()` breaks the program rules that enable the skip logic of the EIR’s schedule. As a result of this error, the end user will see and enter any available doses of an antigen’s schedule at the first visit. This bug is being fixed by February 2025. The core team recommends using [a version of the Android app above v 3.1.0.1](https://github.com/dhis2/dhis2-android-capture-app/releases/tag/3.1.0.1)
+Many rural health centres with limited internet access, can benefit from the offline data entry capabilities of the DHIS2 Capture App on Android devices. However, a bug in the Android app related to the function `d2:lastEventDate()` breaks the program rules that enable the skip logic of the EIR’s schedule. As a result of this error, the end user will see and enter any available doses of an antigen’s schedule at the first visit. This bug was corrected by a hotfix in February 2025. The core team thus recommends using [a version of the Android app at or above v 3.1.1.1](https://github.com/dhis2/dhis2-android-capture-app/releases/tag/3.1.1.1)
 
 ## Dashboard and Analytics
 
