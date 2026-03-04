@@ -10,33 +10,55 @@ Question:
 Currently two datasets for RI and catchup
 In future, consolidate into one, with extended age bands? How to denote "catch up" or delayed doses?
 
-## Introduction and Background
+## Introduction and Background {#imm_bcu-backlog-rtm-intro}
 
-The Big Catch-Up (BCU) is a global initiative launched in April 2023, led by WHO, UNICEF, Gavi, and key partners, to close the immunization gaps caused by significant disruptions during the COVID-19 pandemic. The initiative is built on three pillars: catching up children who missed vaccination since 2020 (including the accumulated zero-dose and under-immunized cohort from 2019); restoring routine vaccination coverage to at least 2019 levels; and strengthening immunization systems within Primary Health Care to improve resilience and accelerate progress toward the Immunization Agenda 2030 (IA2030) and Gavi 5.1 goals.
+The Big Catch-Up (BCU) is a [global initiative launched in April 2023](https://www.unicef.org/press-releases/big-catch-up), led by WHO, UNICEF, Gavi, and other global partners, to close the immunization gaps caused by significant disruptions during the COVID-19 pandemic. The initiative focuses on reaching Zero-Dose and Under-Immunized children, particularly those aged 12 to 59 months, who missed routine vaccinations between 2019 and 2022.
 
-**The scale of the challenge is significant.** Before BCU activities began, an estimated 25 million zero-dose (ZD) children existed globally, with over 6 million additional children becoming zero-dose between 2019 and 2022. In the African region alone, the number of zero-dose children remained approximately 0.5 million higher in 2023 than in 2019, despite overall coverage improvements. Individual countries faced steep backlogs: Ethiopia estimated 3.9 million zero-dose children from the 2019–2022 period, Tanzania identified over one million children aged 1–5 years without any vaccination, and Mozambique mapped 876,841 zero-dose and under-immunized children across seven priority provinces.
+**The scale of this challenge is significant.** Before BCU activities began, an estimated 25 million zero-dose (ZD) children existed globally, with over 6 million additional children becoming zero-dose between 2019 and 2022. Individual countries faced steep immunization backlogs: Ethiopia estimated [3.9 million zero-dose children](https://www.technet-21.org/en/resources/presentation/deep-dive-on-big-catch-up-monitoring-in-ethiopia-presentation-slides) from the 2019–2022 period, Tanzania identified over [one million children](https://www.technet-21.org/en/resources/presentation/bcu-monitoring-in-tanzania) aged 1–5 years without any vaccination, and Mozambique mapped [876,841 zero-dose and under-immunized children](https://www.technet-21.org/en/resources/webinar/deep-dive-on-big-catch-up-monitoring-in-mozambique-video).
 
-During this initiative countries submitted quarterly reports on children reached and doses disbursed to the BCU Monitoring, Evaluation and Learning (MEL) task force, with results compiled in publicly available global dashboards. In parallel, programmes report annually into the WHO/UNICEF Electronic Joint Reporting Form (eJRF) to inform global trends and gap analysis.
+The BCU initiative supports 35 countries where immunization coverage has stagnated or declined, although implementation modalities are tailored to each country context. To monitor BCU progress, all countries submit quarterly reports on children reached and doses disbursed to the global BCU Monitoring, Evaluation and Learning (MEL) task force, with results compiled in publicly available global dashboards. In parallel, programmes report annually into the WHO/UNICEF Electronic Joint Reporting Form (eJRF) to inform analysis of global immunization trends across all WHO member states.
 
-**Data gaps have emerged as a critical barrier.** Most BCU countries customized paper-based and digital tools for BCU implementation — many doing so mid-implementation or only partially. Several data backlogs and harmonization challenges emerged, causing discrepancies between national, partner, and global reports. In early 2022, only 47% of countries with relevant data systems reported delayed dose data into the eJRF, despite 64% indicating they had systems capable of capturing such data. 73% of countries had systems to capture delayed doses by 2024, a still significant gap.
+**Data gaps have emerged as a critical barrier to success.** Most BCU countries customized paper-based and digital tools for BCU implementation — many doing so mid-implementation or only partially. Several data backlogs and harmonization challenges arose, causing discrepancies between national, partner, and global reports. In early 2022, only [47% of countries with relevant data systems reported antigen-level delayed-dose data into the eJRF](https://verixiv.org/articles/2-123/v2), despite 64% indicating they had systems capable of capturing such data. As of 2024, an estimated three quarters of BCU countries could digitally capture delayed doses, a still significant gap.
 
-**DHIS2 implementation for BCU data quality.** In 2025, the HISP Centre at UiO, in partnership with UNICEF, released a DHIS2 toolkit for BCU that included BCU aggregate data collection forms, dashboards, and guidance for adapting Electronic Immunization Registries (EIRs) to capture catch-up doses.
+In 2025, the HISP Centre at UiO, in partnership with UNICEF, released a [DHIS2 toolkit for BCU](https://dhis2.org/events/big-catch-up-module-launch/) that included BCU aggregate data collection forms, dashboards, and guidance for adapting Electronic Immunization Registries (EIRs) to capture catch-up doses.
 
 This guidance focuses on two interrelated challenges:
 
-1. **Addressing BCU data backlog** — how to bring historical BCU data, recorded in paper registers, spreadsheets, or other tools, into DHIS2 for consolidated reporting, and speed up the process of DHIS2 data entry.
+1. **Addressing BCU data backlogs** — how to bring historical BCU data, recorded in paper registers, spreadsheets, or other tools, into DHIS2 for consolidated reporting, and speed up the process of DHIS2 data entry.
 
 2. **Institutionalizing catch-up dose monitoring** — how to modify routine immunization data forms and workflows so that catch-up doses are captured sustainably as part of ongoing health information systems.
 
+Guidance is based on HISP experiences during the development and deployment of the BCU toolkit, as well as a desk review of global and country-level reports on BCU data systems. Further input was provided through a survey on BCU data systems distributed to the DHIS2 Community of Practice and several follow-up interviews.
+
 ---
 
-## Data Backlog
+Based on the analysis of the survey responses, here are the key takeaways regarding the Big Catch Up (BCU) data systems:
 
-### Root Causes of Backlog
+### 1\. Primary Reporting Systems and Data Quality Assessment Gaps
 
-BCU data backlogs arise from a combination of programmatic, technical, and organisational factors, as well as external factors such as inadequate funding, natural disasters, or conflict. Understanding these root causes is the starting point for designing appropriate solutions. Countries are encouraged to assess their own root causes systematically before selecting corrective actions, as solutions should be matched to the specific drivers identified at national and subnational levels.
+DHIS2 Aggregate is the most frequently cited primary system for BCU reporting, but there are significant gaps in data quality assessments specifically for BCU data.  
+* **Primary System Reliance:** DHIS2 Aggregate is the system most countries primarily rely on for quarterly BCU reporting and eJRF submissions (3 mentions). However, a significant portion of respondents either use alternative systems like Excel (2 mentions) or were uncertain ("I don't know," 2 mentions), indicating a mixed and sometimes unclear reporting landscape.
+  * **Low BCU DQA Rate:** A large majority of respondents (5 out of 8 who answered) reported **No** national data quality assessments of DHIS2-based BCU data in the past two years, with no respondent confirming a "Yes" answer.
+  * **Routine DQA is Mixed:** While BCU DQAs are largely absent, national data quality assessments for DHIS2-based *routine immunization* data show a mixed result: 4 reported "No," and 3 reported "Yes".
+  * 
+### 2\. Primary Challenges Stem from Initial System Configuration and Data Definition AmbiguityThe most frequently encountered challenges relate to a lack of system preparedness during the BCU rollout and confusion among end-users about what constitutes "catch up" data.  * 
+**System Re-design was Missed:** The single biggest challenge cited for DHIS2 Aggregate forms is that the "DHIS2 forms was not re-designed to capture BCU doses before BCU roll-out" (4 mentions).
+  * **Data Use and Completeness Issues:** Other key challenges in DHIS2 Aggregate include "Limited use of BCU data for program management" and "Missing data or partial reports from facilities or districts" (both 3 mentions).
+  * **Definition Confusion:** A core issue across both Aggregate and Tracker systems is that the "Definition of 'catch up' is unclear to end users (they include campaign or routine doses as BCU)" (cited in both systems).
+  * **Tracker Configuration:** For DHIS2 Tracker, challenges with configuration, such as setting up "skip logic rules, \[and\] calculating indicators," were the top technical concerns (2 mentions).
+  
+  ### 3\. Low Global Toolkit Adoption and High Interest in Follow-upThe analysis suggests a lack of awareness or use of global resources, contrasted with a high willingness for direct engagement. 
+   * **Global Toolkit Awareness is Low:** Five out of eight respondents indicated they "I don't know" if the global DHIS2 BCU toolkit (demo database, design guide, or metadata) informed their country’s configuration. Only one respondent confirmed that the toolkit was used, suggesting a low rate of utilization or awareness of the global resource.
+  * **Willingness to Engage:** There is a high level of interest in further discussion, with 7 out of 9 respondents willing to participate in a 30-minute follow-up interview.
 
-The following root cause categories have been identified across BCU-implementing countries:
+
+## Data Backlog {#imm_bcu-backlog-rtm-rootcauses}
+
+### Root Causes of Data Backlogs
+
+BCU data backlogs arise from a combination of programmatic, technical, and organizational factors, as well as external factors such as inadequate funding, natural disasters, or conflict. Understanding these root causes is the starting point for designing appropriate solutions. Countries are encouraged to assess their own root causes systematically before selecting corrective actions, as solutions should be matched to the specific drivers identified at national and subnational levels.
+
+The following root cause categories [have been identified](https://www.technet-21.org/en/resources/tool/improving-catch-up-data-completeness-and-timeliness-a-handbook-on-root-causes-and-solutions-to-address-data-backlogs) across BCU-implementing countries:
 
 #### Guidance and Capacity Building Gaps
 
@@ -46,7 +68,8 @@ The following root cause categories have been identified across BCU-implementing
 - Lack of clarity on catch-up/BCU data flow processes, timelines, and roles
 - Delayed revision and dissemination of paper tools (tally sheets, registers), resulting in incorrect or missing data from earlier BCU vaccination activities
 
-> In Tanzania, multiple versions of the vaccination card were circulating across districts simultaneously, leading to inconsistent data capture and retrospective reconciliation needs. (RTM guidance)
+> In Tanzania, multiple versions of the [vaccination card](https://www.technet-21.org/en/resources/presentation/catch-up-vaccination-insights-from-5-big-catch-up-country-case-studies-presentation-slides) were circulating across districts simultaneously, with some missing Rota 3 or IPV, leading to inconsistent data capture and retrospective reconciliation.
+
 
 #### Technology and Delayed Systems Design
 
@@ -59,6 +82,7 @@ The following root cause categories have been identified across BCU-implementing
 
 > In Tanzania, DHIS2 was not ready when BCU activities launched; an interim Google Sheets and AFYA campaign data system was used, and integration into DHIS2 did not begin until January 2025. In Mozambique, DHIS2 (SISMA) configuration delays led to reliance on paper-based daily summary books and monthly summary sheets. Nepal had not configured DHIS2 for antigen-specific reporting for the 24–59-month age group. In Ethiopia, DHIS2 integration challenges were cited by the country team as a key "do differently" recommendation; a separate Google Sheets form was used alongside routine registers throughout BCU implementation.
 
+
 #### Infrastructure Barriers
 
 - Insufficient or low-quality devices (limited storage, battery issues)
@@ -66,7 +90,7 @@ The following root cause categories have been identified across BCU-implementing
 - Shortages of revised paper tools (tally sheets, registers, reporting forms)
 - Server downtime or inadequate server capacity to support timely data entry
 
-> Analysis of COVID-19 data backlogs in DRC, Kenya, Senegal, and Tanzania found that in Kenya, 58% of facilities reported unreliable connectivity as a constraint; in Tanzania, daily server crashes were reported by 56% of respondents (Carnahan et al., 2024). These infrastructure constraints directly translate to BCU data backlogs.
+> Analysis of COVID-19 data backlogs in DRC, Kenya, Senegal, and Tanzania found that in Kenya, 58% of facilities reported unreliable connectivity as a constraint; in Tanzania, daily server crashes were reported by 56% of respondents (Carnahan et al., 2024). These infrastructure constraints likely also impact BCU data entry.
 
 #### Health Workforce Constraints
 
@@ -75,7 +99,7 @@ The following root cause categories have been identified across BCU-implementing
 - Limited supervision, follow-up, or motivation for timely data entry
 - Insufficient engagement of key technical and programme staff at subnational levels
 
-> In DRC and Tanzania, delayed payment of campaign incentives significantly reduced motivation for accurate record-keeping during COVID-19 vaccination. The same dynamic applies to BCU outreach and PIRI activities (Carnahan et al., 2024).
+> In DRC and Tanzania, delayed payment of campaign incentives significantly reduced motivation for accurate record-keeping during COVID-19 vaccination (Carnahan et al., 2024). Endemic challenges of inconsistent payments and staff turnover at primary care level likely complicate BCU outreach and PIRI activities.
 
 #### Systems Architecture and Governance
 
@@ -97,11 +121,23 @@ Countries employed various approaches for the BCU, including routine service del
 
 Where countries combined strategies without aligning their recording tools, data from different activities accumulated in separate, incompatible sources, making consolidation difficult.
 
+#### Data Source Misalignment
+
+Even where BCU data was effectively collected, discrepancies between data sources can create harmonization challenges that impede data use. In Mozambique, [community mapping identified 262,838 zero-dose children](https://www.technet-21.org/en/resources/presentation/deep-dive-on-big-catch-up-monitoring-in-mozambique), compared to 762,041 in the national DHIS2 system, SISMA — a nearly threefold difference that raised questions about both the mapping methodology and the quality of administrative estimates. In Uganda, [inflated coverage figures](https://www.unicef.org/digitalimpact/media/1231/file/Big%20Catch-Up%20Real%20Time%20Monitoring%20Learning%20Brief,%20Final%20EN.pdf.pdf) arose from static population estimates that did not account for refugee influxes and internal displacement. In Pakistan, national immunization coverage targets reported to WHO were[ not completely aligned](https://www.technet-21.org/en/community/events/971-catch-up-vaccination-insights-from-5-big-catch-up-country-case-studies/timeline) with district-level targets; provinces needed to revise targets for every round to factor in new births and missed children.
+
+When multiple data sources are employed in analysis or reporting, their data collection methodology should be made explicit for the end user to decide on the appropriate source.
+
+
 ---
-
-#### Data Quality Discrepancies Across Existing Systems
-
-Even where BCU data was collected, discrepancies between data sources create harmonisation challenges. In Mozambique, community mapping identified 262,838 zero-dose children, compared to 762,041 in DHIS2 (SISMA) — a nearly threefold difference that raised questions about both the mapping methodology and the quality of administrative estimates. In Uganda, inflated coverage figures arose from static population estimates that did not account for refugee influxes and internal displacement. In Pakistan, WUENIC national targets were misaligned with district-level pre-registration data. (RTM paper)
+> **Tip**
+>
+> For DHIS2 implementers considering how to capture catch-up doses in routine systems, it's most important to ensure that forms are designed and rolled out **promptly and comprehensively** across the intervention areas.
+> 
+> In the DHIS2 community survey, 9 respondents across 6 countries were asked the question: "Which of the following **challenges** have you encountered with collecting **BCU data in DHIS2 Aggregate forms**?"
+>
+> The most common responses were: "DHIS2 forms not designed for BCU before roll-out" and "missing/partial reports from facilities". These require active collaboration with health authorities and agile development. Notably, training and technical syncing were less pronounced challenges.
+> 
+> ![Survey: Challenges Reported](resources/image/bcu_survey1.png)
 
 ---
 
@@ -113,7 +149,7 @@ Before selecting solutions, programmes should systematically identify the driver
 
 **The Iceberg Model** helps teams look beyond visible symptoms. A "missing BCU data" event may reflect recurring patterns (reporting delays, inconsistent age disaggregation), structural causes (weak workflows, fragmented systems, poor connectivity), and mental models (the perception that BCU data are secondary to routine data, or that catch-up doses can simply be reported into existing <1-year categories). The model encourages systemic reform rather than quick fixes.
 
-**Goal–Barrier Analysis** defines a specific objective — for example, "All BCU data entered, validated, and available in national reporting systems by the end of Q1 2026" — and maps the barriers preventing it. Typical barriers include reporting fatigue, insufficient devices, data stored in external interim systems, and poor cross-province coordination.
+**Goal–Barrier Analysis** defines a specific objective — for example, "All BCU data entered, validated, and available in national reporting systems by the end of Q2 2026" — and maps the barriers preventing it. Typical barriers include reporting fatigue, insufficient devices, data stored in external interim systems, and poor cross-province coordination.
 
 #### Data Collection Approaches for Root Cause Diagnosis
 
@@ -169,15 +205,15 @@ This inventory guides the choice of import strategy and identifies data quality 
 
 Where BCU data exists in tabular format (Excel, Google Sheets, CSV), manual re-entry into DHIS2 is unnecessary and introduces transcription errors. In addition to the DHIS2 API and core Import/Export app, two DHIS2 applications support bulk data import:
 
-- **Bulk Load App (EST):** Generate templates (Excel sheets) for DHIS2 datasets and programs and import multiple data values (as aggregated or events) into DHIS2 instances. Available at: https://apps.dhis2.org/app/ce68be24-22ce-4cfd-98f7-71f4a0155a0f
+- **Bulk Load App (EyeSeaTea):** Generate templates (Excel sheets) for DHIS2 datasets and programs and import multiple data values (as aggregated or events) into DHIS2 instances. Available at: https://apps.dhis2.org/app/ce68be24-22ce-4cfd-98f7-71f4a0155a0f
 
-- **Import Wizard:** A more general bulk import tool supporting multiple file formats. Available at: https://apps.dhis2.org/app/c4635bfc-24cc-4be7-8bf1-19803c058ff3
+- **Import Wizard (HISP Uganda):** A more general bulk import tool supporting multiple file formats. Available at: https://apps.dhis2.org/app/c4635bfc-24cc-4be7-8bf1-19803c058ff3
 
 Both tools require that source data be mapped to the correct data elements, periods, and organisation units in the target DHIS2 instance. A test import in a development environment is strongly recommended before committing data to production.
 
 #### Step 3: Managing Data from Other DHIS2 Datasets
 
-Where BCU data was entered into a separate DHIS2 dataset (for example, a standalone BCU dataset created before the DHIS2 toolkit was available), the Data Exchange app can transfer data from one DHIS2 instance to another. <link to data exchange docs>
+Where BCU data was entered into a separate DHIS2 dataset (for example, a standalone BCU dataset created before the DHIS2 toolkit was available), t[he Data Exchange app](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-242/exchanging-data/data-exchange.html) can transfer data from one DHIS2 instance to another.
 
 When combining datasets:
 
@@ -190,27 +226,35 @@ When combining datasets:
 
 Where a country uses an Electronic Immunization Registry (EIR) — such as DHIS2 Tracker — additional considerations apply for under-immunized children who were partially vaccinated and may already have an enrollment record.
 
-**Coming in DHIS2 version 43 (expected May 2026),** row-based data entry will be available in the DHIS2 Capture app. This feature will streamline the facility-level process of updating EIR records for under-immunized children with existing enrollments — allowing vaccinators to update multiple records in a single session without opening each record individually. Bulk enrollment functionality is targeted for the following release. These features directly address one of the most time-consuming aspects of EIR-based BCU documentation.
+- If there are skip logics to show certain antigens based on age, then it is essential altering the program rules to allow for older children to receive a delayed dose. This was noted a challenge in Zambia, where an existing EIR in DHIS2 was not properly adapted before BCU roll-out:
+> *"When you enter the date of birth, it would bring the [antigen] options on the page, which is BCG, IPV0, Penta 1, PCV1, but doesnt go beyond to other antigens, unless you backdate the event date."* - Cecilia Chizema, Environmental Health Officer with Zambia MOH, on her initial experience entering immunization data into DHIS2 Tracker (Dec 2025). 
+>
+- Adapting the existing EIR may require developing a separate section to denote which catch up dose has been provided. For more examples and guidance, see the [system design guide on EIR adaptation](https://docs.dhis2.org/en/implement/health/immunization/immunization-epi-big-catch-up/design.html#eir-adaptation-for-bcu).
+- If the implementation employs Android tablets to capture data offline, then after program adjustments have been pushed to production, all end users must sync metadata to the latest version of the program.
+- For analysis, program indicators from EIR data should be sent to aggregate datasets. See more guidance on [integrating Tracker data into aggregate datasets](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html)
+- The Capture app could be optimized for backlog data entry workflows, such as custom [working lists](https://docs.dhis2.org/en/use/user-guides/dhis-core-version-242/tracking-individual-level-data/capture.html#list-tracked-entity-instances-enrolled-in-program) for under-immunized children.
 
-Reference: https://dhis2.atlassian.net/browse/ROADMAP-281
+> **Tip**
+> 
+>**Coming in DHIS2 version 43** (expected May 2026), [row-based data entry](https://dhis2.atlassian.net/browse/ROADMAP-281) will be available in the DHIS2 Capture app. This feature will streamline the facility-level process of updating EIR records for under-immunized children with existing enrollments — allowing vaccinators to update multiple records in a single session without opening each record individually.  These features directly address one of the most time-consuming aspects of EIR-based BCU documentation.
 
-See more guidance on [integrating Tracker data into aggregate datasets](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html)
 
 
 #### Spotlight: Learning from the COVID-19 Data Backlog
 
-Experience with COVID-19 vaccination data backlogs in multiple countries offers relevant lessons for the BCU context. A mixed methods analysis across DRC, Kenya, Senegal, and Tanzania (Carnahan et al., 2024) identified that backlogs were not primarily caused by training gaps — 80–94% of health workers in Kenya, Tanzania, and Senegal reported receiving sufficient systems training. Rather, backlogs stemmed from **system design choices and workforce conditions**:
+Experience with COVID-19 vaccination data backlogs in multiple countries offers relevant lessons for the BCU context. A mixed methods analysis across DRC, Kenya, Senegal, and Tanzania (Carnahan et al., 2024) identified that backlogs were not primarily caused by training gaps — 80–94% of health workers in Kenya, Tanzania, and Senegal reported receiving sufficient systems training. Rather, backlogs stemmed from several **system design choices and workforce conditions**:
 
 - **System design:** Online-only systems without offline capability created bottlenecks in low-connectivity settings. Systems that required dual paper and digital data entry doubled the workload.
 - **Workforce conditions:** Staff purchased personal data bundles when no institutional provision was made. Data entry competed with clinical duties during busy service delivery periods. In DRC and Tanzania, delayed payment of campaign incentives significantly reduced motivation.
 
-Key recommendations from this experience include:
+> As reported through the DHIS2 BCU survey, the chief underlying causes of Covid-19 vaccination backlogs remain evident for BCU data systems.
+
+Key recommendations from the Covid-19 backlog experience include:
 - **Conduct infrastructure and workforce assessments before tool selection**, not after deployment.
-- **Deploy a minimum viable product (MVP)** aligned with existing workflows — add complexity only after the core system is stable.
+- **Deploy a minimum viable product (MVP) digital system** aligned with existing workflows — add complexity only after the core system is stable.
 - **Mobilize temporary data entry staff** for high-volume periods (BCU rounds, campaign closures).
 - **Ensure timely compensation** for data entry work, including through digital financial services where possible.
-- **Develop troubleshooting guides and SOPs** in advance; do not rely on ad hoc problem-solving.
-
+- **Develop troubleshooting guides and SOPs** in advance; do not rely on ad hoc problem-solving by an already-stretched workforce.
 
 ---
 
@@ -218,7 +262,7 @@ Key recommendations from this experience include:
 
 Countries implementing the BCU report catch-up doses through two primary channels: **BCU quarterly reports** submitted to the global MEL task force, and the annual **WHO/UNICEF Electronic Joint Reporting Form (eJRF)**. Discrepancies between these two sources are common and expected — they arise from differences in reporting periods, inclusion/exclusion criteria, delivery strategy classification, validation timelines, and data system design. A structured harmonization process is essential to produce a single, validated national dataset that accurately reflects immunization performance.
 
-The following 7-step process is adapted from the *Standard Operating Procedure for Harmonizing BCU Routine Catch-Up, Monthly Administrative Data, and Data with eJRF Reports* (WHO African Region, draft 2025). While developed for the African Region context, the methodology is applicable across all BCU-implementing countries.
+The following 7-step process is adapted from *Standard Operating Procedure for Harmonizing Big Catch-Up Data, Routine Administrative Data, and eJRF Reports* developed by WHO AFRO. While developed for the African Region context, the  methodology is applicable across all BCU-implementing countries. Further, this same exercise could be undertaken for any comparison of quarterly and annual immunization data sources (i.e. not just BCU and eJRF).
 
 **Intended users:** National and subnational EPI teams, WHO and UNICEF country office teams, and Regional Office staff responsible for coordinating, consolidating, and monitoring BCU data.
 
@@ -227,18 +271,18 @@ The following 7-step process is adapted from the *Standard Operating Procedure f
 Collect and consolidate all relevant validated datasets required for the BCU–eJRF harmonization exercise:
 
 1. Obtain the final validated BCU quarterly data (Q1–Q4), disaggregated by age group (12–23m, 24–59m, or combined 12–59m) and antigen (DTP1, DTP3, IPV, MCV1, MCV2). Incorporate any post-submission corrections.
-2. Retrieve the latest eJRF export. Note that the eJRF 2024 submission reflects 2023 data; confirm which year each dataset covers.
+2. Retrieve the latest eJRF export. Note that the eJRF 2026 submission reflects 2025 data; confirm which year each dataset covers.
 3. Check completeness — ensure all reports from all districts or provinces are included before proceeding.
 4. Align vaccine names and indicator definitions across datasets using a **standardized vaccine mapping table** (e.g., DTP1 = Penta1; MCV1 = Measles1). Country-specific DHIS2 labels should be mapped to WHO standard codes before comparison.
 
-**Expected output:** Two validated, complete, and consistently labelled datasets ready for comparison.
+**Expected output:** Two validated, complete, and consistently labelled datasets ready for comparison. 
 
 ### Step 2: Data Preparation
 
 Standardize both datasets for direct comparison:
 
 1. Standardize variable names and confirm that both sources refer to the same target population (e.g., 12–59 months).
-2. Aggregate BCU quarterly data into annual totals by summing Q1–Q4 by vaccine and age group. Retain quarterly data in a separate sheet for reference.
+2. Aggregate BCU quarterly data into annual totals by summing Q1–Q4 by vaccine and age group. Retain quarterly data in a separate sheet of the file for reference.
 3. Create a unified comparison table with columns for country, year, vaccine, age group, BCU total, eJRF total, absolute difference, and percentage difference.
 
 ### Step 3: Data Comparison and Discrepancy Flagging
@@ -308,26 +352,52 @@ Regional Office teams (WHO/UNICEF) should conduct periodic reviews of country ha
 
 ### Required Data Dimensions
 
-The BCU toolkit monitors immunization efforts with age disaggregations that are more specific than standard EPI reporting. The standard WHO EPI framework uses **< 1 year** and **≥ 1 year** age groups. BCU monitoring requires:
+Both BCU and standard EPI data frameworks  require reporting by **Organisation unit** (e.g. district / facility / health post) and **Antigen and dose number** (e.g. IPV-3).
 
-- **Organisation unit** (facility or health post)
+However, the BCU framework monitors immunization efforts with age disaggregations that are more specific than standard EPI reporting. The standard [WHO EPI framework](https://docs.dhis2.org/en/implement/health/immunization/expanded-programme-on-immunization-epi-aggregate/design.html#vaccinations-children) uses **< 1 year** and **≥ 1 year**. Conversely, BCU monitoring requires:
+
+- **_Three_ Age bands**: 0–11 months, 12–23 months, 24–59 months
 - **Catch-up vs. on-schedule** dose classification
-- **Antigen and dose number**
-- **Age bands**: 0–11 months, 12–23 months, 24–59 months
 
 This disaggregation is essential for monitoring progress against BCU targets and for calculating cohort-based coverage. In cases where a country's data entry form does not permit this level of disaggregation, it may be possible to report a single combined age group of 12–59 months.
 
-**Additional disaggregations** — such as sex and facility/outreach delivery — may also be required for Gavi quarterly reporting and BeSD analysis. The Gavi BCU Monitoring and Reporting Form (March 2024) requires data broken down by age group (12–23m and 24–59m) and by delivery modality for key antigens (DTP1, DTP3, IPV, MCV1, MCV2, bOPV). Each additional disaggregation roughly doubles the counting and data entry burden. Countries should carefully assess the feasibility of multiple disaggregations within their reporting workflows before adding them to forms.
+**Additional disaggregations** — such as sex and facility/outreach delivery — may also be required for Gavi quarterly reporting and BeSD analysis. The [Gavi BCU Monitoring and Reporting Form March 2024](https://www.technet-21.org/en/resources/tool/gavi-big-catch-up-monitoring-form-and-guidance) requires data broken down by age group (12–23m and 24–59m) and by delivery modality for key antigens (DTP1, DTP3, IPV, MCV1, MCV2, bOPV). Each additional disaggregation roughly doubles the counting and data entry burden. Countries should carefully assess the feasibility of multiple disaggregations within their reporting workflows before adding their routine forms.
 
-In Mozambique, Round 1 data collection used a daily tool capturing doses by antigen, gender, and age group (0–11m, 12–23m, 24–59m). Round 2 moved to more granular age bands (0–11m, 12–23m, 24–35m, 36–47m, 48–59m) with separate tracking by immunization status (never vaccinated, zero-dose, under-immunized) and delivery setting (mobile brigade, fixed post). Countries considering this level of granularity should assess whether the additional data dimensions will be consistently completed by health workers and whether the DHIS2 configuration can support real-time validation.
+> In [Mozambique](https://www.youtube.com/watch?v=wyepGM4Wk90&t=1991s), Round 1 data collection used a daily tool capturing doses by antigen, gender, and age group (0–11m, 12–23m, 24–59m). Round 2 moved to more granular age bands (0–11m, 12–23m, 24–35m, 36–47m, 48–59m) with separate tracking by immunization status (never vaccinated, zero-dose, under-immunized) and delivery setting (mobile brigade, fixed post). Countries considering this level of granularity should assess whether the additional data dimensions will be consistently completed by health workers and validated by supervisors.
 
-> **Important note:** Children aged 0–11 months should **not** be reported as BCU doses. This age group is already covered by routine immunization schedules. BCU activities target children aged 12–59 months who missed doses during the 2019–2022 period.
 
 ### Form Design
 
-The central design question is whether to **consolidate catch-up reporting within the existing routine immunization (RI) dataset** or to **maintain a separate catch-up section**. Each approach has distinct implications for data continuity, indicator management, and implementation complexity.
+The central form design question is whether to **consolidate catch-up reporting within the existing routine immunization (RI) dataset** or to **maintain a separate catch-up section**. Each approach has distinct implications for data continuity, indicator management, and implementation complexity.
+
 
 #### Option A: One Consolidated Dataset with Extended Age Bands
+
+| Vaccine & Dose | 0–11 months | 12–23 months | 24–59 months |
+|---|---|---|---|
+| BCG 1 | | | |
+| HepB 1 | | | |
+| OPV 0 | | | |
+| DTaP 1 | | | |
+| DTaP 2 | | | |
+| DTaP 3 | | | |
+| HepB 2 | | | |
+| HepB 3 | | | |
+| HepB 4 | | | |
+| Hib 1 | | | |
+| Hib 2 | | | |
+| Hib 3 | | | |
+| Hib Booster | | | |
+| IPV 1 | | | |
+| IPV 2 | | | |
+| IPV 3 | | | |
+| PCV 1 | | | |
+| PCV Booster | | | |
+| Rotavirus 1 | | | |
+| Rotavirus 2 | | | |
+| Rotavirus 3 | | | |
+| MR/MMR 1 | | | |
+| MR/MMR 2 | | | |
 
 This option replaces the standard EPI age disaggregation (< 1 year / ≥ 1 year) with the BCU-aligned disaggregation (0–11 months / 12–23 months / 24–59 months) across the routine RI reporting form.
 
@@ -345,7 +415,7 @@ This option replaces the standard EPI age disaggregation (< 1 year / ≥ 1 year)
 **Implementation steps for Option A** (to be completed in a development or test environment before any production changes):
 
 1. Create new category options, categories, and category combinations for the 0–11m / 12–23m / 24–59m age disaggregations, if they do not yet exist in the system.
-2. Clone the existing RI dataset using the Dataset Cloning App (https://apps.dhis2.org/app/73dd6aca-bee2-4074-89c1-34cbb15be0b6), adding a prefix such as "new [month/year]" to distinguish it from the existing dataset.
+2. Clone the existing RI dataset using the **Dataset Cloning App** (https://apps.dhis2.org/app/73dd6aca-bee2-4074-89c1-34cbb15be0b6), adding a prefix such as "new [month/year]" to distinguish it from the existing dataset.
 3. Within the cloned dataset, apply the new category combination to the antigen and dose data elements, replacing the previous age disaggregation.
 4. Recreate or clone all programme indicators and dashboards referencing the affected data elements.
 5. Test data entry, validation rules, and indicator outputs thoroughly in the development environment.
@@ -379,7 +449,14 @@ This option adds explicit BCU data elements to the existing RI form — or creat
 4. Update tally sheets, HBRs, and monthly summary forms to align with the new data elements.
 5. Develop clear SOPs and training materials defining the catch-up vs. routine classification for health workers.
 
-**Recommendation:** For most countries beginning BCU integration in 2025–2026, **Option B is the lower-risk starting point.** It preserves data continuity, reduces the risk of a disruptive system migration during an active programme, and allows programmes to test BCU data collection before committing to a full restructuring of the RI form. Countries with strong DHIS2 capacity and a planned RI data system review may prefer Option A as the longer-term solution.
+**Recommendation:** As the BCU global initiative winds down, reporting of catch-up or "delayed" doses should be integrated into the Routine Immunization data system as soon as possible. Countries with strong DHIS2 capacity and a planned RI data system review may prefer Option A as the longer-term solution. However, it takes significant time and political commitment to plan and mobilize stakeholders on new and transformed EPI reporting framework; as an interim stop-gap measure, a separate dataset section specifically for delayed doses (Option B) may be preferred.
+
+> **Note**
+> 
+> Any new form design in DHIS2 also implies updating paper-based vaccination registers and tally sheets. In [Somalia](https://www.unicef.org/digitalimpact/media/1231/file/Big%20Catch-Up%20Real%20Time%20Monitoring%20Learning%20Brief,%20Final%20EN.pdf.pdf), a change to BCU age bands in DHIS2 also required updating paper-based tally sheets at health facilities.
+> ![Somalia tally sheets](resources\image\Screenshot_somalia_hq.png)
+
+
 
 ### Managing the Reporting Burden
 
@@ -391,13 +468,13 @@ For countries where a full disaggregation is not feasible, a pragmatic approach 
 2. Report **total doses by sex and delivery strategy** in a separate, simplified monthly summary (four numbers per antigen per month).
 3. Obtain more granular disaggregated data through **periodic targeted surveys** or field assessments rather than routine reporting.
 
-This approach aligns with the BCU Monitoring Interim Guidance (WHO/UNICEF, 2024), which notes that countries should include only those indicators they can effectively measure and report without overburdening health workers and the information system.
+This approach aligns with the [BCU Monitoring Interim Guidance ](https://iris.who.int/server/api/core/bitstreams/bf932542-aaf8-4006-bf65-a46e2db801bf/content)(WHO/UNICEF, 2024), which notes that countries should include only those indicators they can effectively measure and report without overburdening health workers and the information system.
 
 ### Data Quality Review Procedures
 
 BCU data quality review should be built into the routine data management cycle at all levels. Common data quality challenges include:
 
-- **Denominator mismatches:** WUENIC national estimates and DHIS2 administrative targets may differ substantially from district microplan estimates, community mapping results, or sub-national survey data. In Mozambique, DHIS2 estimates of zero-dose children were nearly three times higher than community mapping results. Countries should document their denominator source and rationale, and cross-check against multiple data sources.
+- **Denominator mismatches:** WHO/UNICEF national estimates and DHIS2 administrative targets may differ substantially from district microplan estimates, community mapping results, or sub-national survey data. In Mozambique, DHIS2 estimates of zero-dose children were nearly three times higher than community mapping results. Countries should document their denominator source and rationale, and cross-check against multiple data sources.
 
 - **Dose classification errors:** Catch-up doses recorded as routine doses will inflate administrative coverage. Health workers should be trained that the dose number sequence (DTP1, DTP2, DTP3) is determined by the child's vaccination history — not the child's age — regardless of when the dose is given. All outreach doses should not automatically be classified as "catch-up"; a child due for their first dose on-schedule during an outreach session is receiving a routine dose.
 
@@ -417,11 +494,7 @@ Addressing backlogs and improving data quality should not be seen as one-off cor
 - **Reinforcing data governance and feedback loops:** Establishing regular review meetings, integrated dashboards, and structured feedback channels between facility, district, and national levels.
 - **Ensuring financial commitments:** Including budget lines for data bundles, device replacement, digital system maintenance, and routine training in national immunization and health information system plans.
 
-Countries still finalizing digital system customizations can leverage existing resources including the **RTM Readiness Checklist**, the **DHIS2 BCU module**, and the **Catch-Up Institutionalization Assessment Tool** for structured guidance on readiness, configuration, and long-term institutionalization of catch-up monitoring.
-
-[TODO: CITE these]
-
-
+Countries still finalizing digital system customizations can leverage existing resources including the [RTM Readiness Checklist](https://www.technet-21.org/en/resources/tool/big-cacth-up-bcu-the-real-time-monitoring-rtm-readiness-checklist), the [DHIS2 BCU module](https://docs.dhis2.org/en/implement/health/immunization/immunization-epi-big-catch-up/design.html), and the [Catch-Up Institutionalization Assessment Tool](https://www.technet-21.org/en/resources/tool/catch-up-institutionalization-assessment-tool).
 
 ---
 
@@ -433,34 +506,40 @@ Other sources of information available within the health management information 
 
 #### Community Health Information Systems (CHIS)
 
-Community health workers (CHWs) play a critical role in identifying and registering zero-dose and under-immunized children. In Tanzania, CHWs were deployed to identify older children without any vaccinations and to refer them to health facilities.
+Community health workers (CHWs) play a critical role in identifying and registering zero-dose and under-immunized children. In [Tanzania](https://www.technet-21.org/en/resources/presentation/bcu-monitoring-in-tanzania), CHWs were deployed to identify older children without any vaccinations and to refer them to health facilities.
 
 Where CHW-generated data flows into a community health information system (CHIS), it can be linked with facility-level EIR or aggregate BCU data to track whether referred children were subsequently vaccinated. This triangulation can improve the reliability of coverage estimates and support defaulter follow-up.
 
+For more on CHW data in DHIS2, see the [DHIS2 CHIS Toolkit](https://docs.dhis2.org/en/implement/health/chis-community-health-information-system/design/chis-general-design.html).
+
 #### Behavioural and Social Drivers (BeSD) Data
 
-BeSD surveys capture the social and behavioural factors influencing vaccine uptake. The five priority indicators — confidence in vaccine benefits, family norms, intention to vaccinate, knowledge of vaccination location, and affordability — provide actionable information for designing demand generation strategies. BeSD data should be collected alongside BCU activities, analysed with gender disaggregation, and compared with immunization coverage data to identify communities where low coverage is driven by demand-side barriers rather than supply or access constraints. The Gavi BCU Monitoring and Reporting Form recommends BeSD assessments as a standard component of BCU monitoring.
+BeSD surveys capture the social and behavioural factors influencing vaccine uptake. The five priority indicators — confidence in vaccine benefits, family norms, intention to vaccinate, knowledge of vaccination location, and affordability — provide actionable information for designing demand generation strategies. BeSD data should be collected alongside BCU activities, analysed with gender disaggregation, and compared with immunization coverage data to identify communities where low coverage is driven by demand-side barriers rather than supply or access constraints. The [Gavi BCU Monitoring and Reporting Form](https://www.technet-21.org/en/resources/tool/gavi-big-catch-up-monitoring-form-and-guidance) recommends BeSD assessments as a standard component of BCU monitoring. 
+
+For more on BeSD data in DHIS2, see the [DHIS2 Immunization Demand toolkit ](https://docs.dhis2.org/en/implement/health/immunization/immunization-demand/design.html)as well as BeSD section of the [Big Catch Up toolkit](https://docs.dhis2.org/en/implement/health/immunization/immunization-epi-big-catch-up/design.html#behavioural-and-social-drivers-of-vaccination).
 
 #### Health Facility Assessments and Readiness Data
 
 Facility readiness assessments can provide complementary evidence on the supply-side determinants of low coverage — vaccine stock availability, cold chain status, trained staff presence, and opening hours. Where routine RI coverage is low despite demand, facility readiness data helps distinguish between programme failure (insufficient services) and demand failure (caregivers not presenting).
 
+For more on health facility assessments, see the [DHIS2 Health Facility Profile toolkit](https://docs.dhis2.org/en/implement/health/health-facility-profile/design.html#hfp-design).
+
 #### Rapid Convenience Surveys
 
-Countries facing data inconsistency or late reporting challenges may use **Rapid Convenience Surveys (RCS)** to validate administrative data at district or community level. Ethiopia used RCS as a validation tool for administrative BCU data where DHIS2 reporting was incomplete or unreliable.
+Countries facing data inconsistency or late reporting challenges may use **Rapid Convenience Surveys (RCS)** to validate administrative data at district or community level. [Ethiopia](https://www.technet-21.org/en/resources/presentation/deep-dive-on-big-catch-up-monitoring-in-ethiopia-presentation-slides) used RCS as a validation tool for administrative BCU data where DHIS2 reporting was incomplete or unreliable.
 
 ### Supervision and Remote Monitoring
 
 Supportive supervision is an essential component of BCU data quality assurance. Countries have used a range of approaches:
 
-- **ODK/KoboCollect-based supervision checklists** for field monitoring, deployed in Afghanistan, Burundi, Ethiopia, Mozambique, Pakistan, and Somalia. These digital checklists enable standardized data collection on service delivery quality and data recording practices, and aggregate results rapidly at district and national level.
-- **Remote review meetings** via Microsoft Teams (Comoros, Madagascar, Nigeria) allow district and subnational teams to review data jointly with national counterparts and partners without requiring travel.
+- **Digital supervision checklists** for field monitoring, deployed in Afghanistan, Burundi, Ethiopia, Mozambique, Pakistan, and Somalia. Digitized checklists in tools such as ODK enabled standardized data collection on service delivery quality and data recording practices, and aggregate results rapidly at district and national level.
+- **Remote review meetings** via Microsoft Teams (Comoros, Madagascar, Nigeria) allowed district and subnational teams to review data jointly with national counterparts and partners without requiring travel.
 - **Daily evaluation meetings** during BCU rounds — recommended by Ethiopia and Cameroon based on their implementation experience — allow rapid identification and response to coverage gaps and data recording problems.
-- **WhatsApp-based algorithm dissemination** (Kyrgyzstan) provides health workers with accessible, visual guidance on catch-up scheduling that can be referenced during service delivery.
+- **WhatsApp-based algorithm dissemination** (Kyrgyzstan) providing health workers with accessible, visual guidance on catch-up scheduling that can be referenced during service delivery.
 
 ### Subnational Data Use and Review
 
-Experience across BCU countries consistently shows that **structured data review processes are more effective than dashboards alone** in driving coverage improvements. In Zambia, monthly community-level review meetings built around Google Sheets data enabled local teams to identify and respond to low-coverage areas. In Cameroon, real-time IASO tool data enabled immediate adjustments in low-coverage zones. In Nigeria, daily evening review meetings during BCU rounds allowed the team to solve problems in real time. In Burundi, DHIS2 data entry was completed within three days, and District Medical Officers validated data monthly — a model for how structured accountability can prevent backlogs from accumulating.
+[Experience across BCU countries](https://www.technet-21.org/en/resources/presentation/catch-up-vaccination-insights-from-5-big-catch-up-country-case-studies-presentation-slides) consistently shows that **structured data review processes are more effective than dashboards alone** in driving coverage improvements. In Zambia, monthly community-level review meetings built around Google Sheets data enabled local teams to identify and respond to low-coverage areas. In Cameroon, real-time IASO tool data enabled immediate adjustments in low-coverage zones. In Nigeria, daily evening review meetings during BCU rounds allowed the team to solve problems in real time. In Burundi, DHIS2 data entry was completed within three days, and District Medical Officers validated data monthly — a model for how structured accountability can prevent backlogs from accumulating.
 
 For institutionalized catch-up monitoring, countries should establish regular subnational data review cycles — ideally monthly at district level — with a clear agenda that includes:
 
@@ -478,7 +557,7 @@ For institutionalized catch-up monitoring, countries should establish regular su
 
 - Danovaro-Holliday, M.C., et al. (2025). Leave no one behind: Global analysis on monitoring childhood vaccination timeliness and catch-up. *VeriXiv* [WHO/UNICEF preprint].
 
-- UNICEF (2025). *Real-Time Monitoring Beyond the Big Catch-Up: Leveraging Big Catch-Up Experience to Strengthen Routine Immunization through Digital Solutions and Real-Time Monitoring*. BCU RTM Learning Brief, v5.
+- UNICEF (2025). *Real-Time Monitoring Beyond the Big Catch-Up: Leveraging Big Catch-Up Experience to Strengthen Routine Immunization through Digital Solutions and Real-Time Monitoring*. BCU RTM Learning Brief, v5. https://www.technet-21.org/en/resources/report/real-time-monitoring-beyond-the-big-catch-up
 
 - WHO & UNICEF (2024). *Monitoring and reporting of essential immunization catch-up in the context of the Big Catch-Up: Interim guidance*. January 2024. https://www.technet-21.org/en/topics/programmemanagement/the-big-catch-up
 
