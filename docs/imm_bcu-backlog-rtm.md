@@ -1,15 +1,5 @@
 # Addressing BCU Data Backlogs and Sustaining Real-Time Monitoring Data {#imm_bcu-backlog-rtm}
 
-todo:
-- cite or link all statistics and case studies individually
-- include findings from survey
-- include quotes from survey and follow up interviews
-- include graphics from country presentations for new forms
-
-Question:
-Currently two datasets for RI and catchup
-In future, consolidate into one, with extended age bands? How to denote "catch up" or delayed doses?
-
 ## Introduction and Background {#imm_bcu-backlog-rtm-intro}
 
 The Big Catch-Up (BCU) is a [global initiative launched in April 2023](https://www.unicef.org/press-releases/big-catch-up), led by WHO, UNICEF, Gavi, and other global partners, to close the immunization gaps caused by significant disruptions during the COVID-19 pandemic. The initiative focuses on reaching Zero-Dose and Under-Immunized children, particularly those aged 12 to 59 months, who missed routine vaccinations between 2019 and 2022.
@@ -31,26 +21,6 @@ This guidance focuses on two interrelated challenges:
 Guidance is based on HISP experiences during the development and deployment of the BCU toolkit, as well as a desk review of global and country-level reports on BCU data systems. Further input was provided through a survey on BCU data systems distributed to the DHIS2 Community of Practice and several follow-up interviews.
 
 ---
-
-Based on the analysis of the survey responses, here are the key takeaways regarding the Big Catch Up (BCU) data systems:
-
-### 1\. Primary Reporting Systems and Data Quality Assessment Gaps
-
-DHIS2 Aggregate is the most frequently cited primary system for BCU reporting, but there are significant gaps in data quality assessments specifically for BCU data.  
-* **Primary System Reliance:** DHIS2 Aggregate is the system most countries primarily rely on for quarterly BCU reporting and eJRF submissions (3 mentions). However, a significant portion of respondents either use alternative systems like Excel (2 mentions) or were uncertain ("I don't know," 2 mentions), indicating a mixed and sometimes unclear reporting landscape.
-  * **Low BCU DQA Rate:** A large majority of respondents (5 out of 8 who answered) reported **No** national data quality assessments of DHIS2-based BCU data in the past two years, with no respondent confirming a "Yes" answer.
-  * **Routine DQA is Mixed:** While BCU DQAs are largely absent, national data quality assessments for DHIS2-based *routine immunization* data show a mixed result: 4 reported "No," and 3 reported "Yes".
-  * 
-### 2\. Primary Challenges Stem from Initial System Configuration and Data Definition AmbiguityThe most frequently encountered challenges relate to a lack of system preparedness during the BCU rollout and confusion among end-users about what constitutes "catch up" data.  * 
-**System Re-design was Missed:** The single biggest challenge cited for DHIS2 Aggregate forms is that the "DHIS2 forms was not re-designed to capture BCU doses before BCU roll-out" (4 mentions).
-  * **Data Use and Completeness Issues:** Other key challenges in DHIS2 Aggregate include "Limited use of BCU data for program management" and "Missing data or partial reports from facilities or districts" (both 3 mentions).
-  * **Definition Confusion:** A core issue across both Aggregate and Tracker systems is that the "Definition of 'catch up' is unclear to end users (they include campaign or routine doses as BCU)" (cited in both systems).
-  * **Tracker Configuration:** For DHIS2 Tracker, challenges with configuration, such as setting up "skip logic rules, \[and\] calculating indicators," were the top technical concerns (2 mentions).
-  
-  ### 3\. Low Global Toolkit Adoption and High Interest in Follow-upThe analysis suggests a lack of awareness or use of global resources, contrasted with a high willingness for direct engagement. 
-   * **Global Toolkit Awareness is Low:** Five out of eight respondents indicated they "I don't know" if the global DHIS2 BCU toolkit (demo database, design guide, or metadata) informed their country’s configuration. Only one respondent confirmed that the toolkit was used, suggesting a low rate of utilization or awareness of the global resource.
-  * **Willingness to Engage:** There is a high level of interest in further discussion, with 7 out of 9 respondents willing to participate in a 30-minute follow-up interview.
-
 
 ## Data Backlog {#imm_bcu-backlog-rtm-rootcauses}
 
@@ -258,7 +228,7 @@ Key recommendations from the Covid-19 backlog experience include:
 
 ---
 
-## Harmonizing BCU Data with eJRF Reports
+## Harmonizing BCU Data with eJRF Reports {#imm_bcu-backlog-ejrf}
 
 Countries implementing the BCU report catch-up doses through two primary channels: **BCU quarterly reports** submitted to the global MEL task force, and the annual **WHO/UNICEF Electronic Joint Reporting Form (eJRF)**. Discrepancies between these two sources are common and expected — they arise from differences in reporting periods, inclusion/exclusion criteria, delivery strategy classification, validation timelines, and data system design. A structured harmonization process is essential to produce a single, validated national dataset that accurately reflects immunization performance.
 
@@ -348,7 +318,7 @@ Regional Office teams (WHO/UNICEF) should conduct periodic reviews of country ha
 
 ---
 
-## Long-Term Solutions for BCU Real-Time Monitoring into Routine Immunization Data Flow
+## Long-Term Solutions for Integrating Catch-Up Doses into Routine Immunization Data {#imm_bcu-backlog-rtm-routinizing}
 
 ### Required Data Dimensions
 
@@ -373,31 +343,16 @@ The central form design question is whether to **consolidate catch-up reporting 
 
 #### Option A: One Consolidated Dataset with Extended Age Bands
 
-| Vaccine & Dose | 0–11 months | 12–23 months | 24–59 months |
+| Antigen & Dose | 0–11 months | *12–23 months* | *24–59 months* |
 |---|---|---|---|
-| BCG 1 | | | |
-| HepB 1 | | | |
-| OPV 0 | | | |
-| DTaP 1 | | | |
-| DTaP 2 | | | |
-| DTaP 3 | | | |
-| HepB 2 | | | |
-| HepB 3 | | | |
-| HepB 4 | | | |
-| Hib 1 | | | |
-| Hib 2 | | | |
-| Hib 3 | | | |
-| Hib Booster | | | |
-| IPV 1 | | | |
-| IPV 2 | | | |
-| IPV 3 | | | |
-| PCV 1 | | | |
-| PCV Booster | | | |
-| Rotavirus 1 | | | |
-| Rotavirus 2 | | | |
-| Rotavirus 3 | | | |
-| MR/MMR 1 | | | |
-| MR/MMR 2 | | | |
+| BCG 1 | 20|2 | |
+| HepB 1 |2 |3 | |
+| OPV 0 |10 | | |
+| DTaP 1 | 20|3 |1 |
+| DTaP 2 | | 5|2 |
+| DTaP 3 | | 4|8 |
+| HepB 2 | |2 |3 |
+....
 
 This option replaces the standard EPI age disaggregation (< 1 year / ≥ 1 year) with the BCU-aligned disaggregation (0–11 months / 12–23 months / 24–59 months) across the routine RI reporting form.
 
@@ -427,6 +382,29 @@ This option replaces the standard EPI age disaggregation (< 1 year / ≥ 1 year)
 > **Important:** Do not delete the old dataset or its data. Historic data must be retained for trend analysis. Ensure that sharing settings are preserved when cloning.
 
 #### Option B: Maintain a Separate Section for Catch-Up Doses
+
+| Antigen & Dose | < 1 year  |  ≥ 1 year | 
+|---|---|---|
+| BCG 1 | 20|2 |
+| HepB 1 |2 |3 |
+| OPV 0 |10 | |
+| DTaP 1 | 20|4 |
+| DTaP 2 | | 7|
+| DTaP 3 | | 12|
+| HepB 2 | |5 |
+....
+
+| Catch-Up doses | 12–23 months | 24–59 months | 
+|---|---|---|
+| BCG 1 | 1|1 |
+| HepB 1 |1 |2 |
+| OPV 0 | | |
+| DTaP 1 | 2|1 |
+| DTaP 2 | 5| 2|
+| DTaP 3 | 5|7 |
+| HepB 2 | 2|3 |
+....
+
 
 This option adds explicit BCU data elements to the existing RI form — or creates a companion dataset — without changing the standard EPI age disaggregation.
 
@@ -498,7 +476,7 @@ Countries still finalizing digital system customizations can leverage existing r
 
 ---
 
-## Catch-Up Strategies and the RHIS
+## Catch-Up Strategies and the RHIS {#imm_bcu-backlog-rtm-other-rhis}
 
 ### Triangulating BCU Data with Other HMIS Sources
 
@@ -541,7 +519,7 @@ Supportive supervision is an essential component of BCU data quality assurance. 
 
 [Experience across BCU countries](https://www.technet-21.org/en/resources/presentation/catch-up-vaccination-insights-from-5-big-catch-up-country-case-studies-presentation-slides) consistently shows that **structured data review processes are more effective than dashboards alone** in driving coverage improvements. In Zambia, monthly community-level review meetings built around Google Sheets data enabled local teams to identify and respond to low-coverage areas. In Cameroon, real-time IASO tool data enabled immediate adjustments in low-coverage zones. In Nigeria, daily evening review meetings during BCU rounds allowed the team to solve problems in real time. In Burundi, DHIS2 data entry was completed within three days, and District Medical Officers validated data monthly — a model for how structured accountability can prevent backlogs from accumulating.
 
-For institutionalized catch-up monitoring, countries should establish regular subnational data review cycles — ideally monthly at district level — with a clear agenda that includes:
+For **institutionalized** catch-up monitoring, countries should establish regular subnational data review cycles — ideally monthly at district level — with a clear agenda that includes:
 
 1. Review of BCU coverage against targets, by antigen and age band
 2. Identification of facilities or communities with low coverage or high zero-dose burden
@@ -560,14 +538,3 @@ For institutionalized catch-up monitoring, countries should establish regular su
 - UNICEF (2025). *Real-Time Monitoring Beyond the Big Catch-Up: Leveraging Big Catch-Up Experience to Strengthen Routine Immunization through Digital Solutions and Real-Time Monitoring*. BCU RTM Learning Brief, v5. https://www.technet-21.org/en/resources/report/real-time-monitoring-beyond-the-big-catch-up
 
 - WHO & UNICEF (2024). *Monitoring and reporting of essential immunization catch-up in the context of the Big Catch-Up: Interim guidance*. January 2024. https://www.technet-21.org/en/topics/programmemanagement/the-big-catch-up
-
-
-
-Check if can cite
-- UNICEF/WHO/Gavi (2025). *Improving Catch-Up Data Completeness and Timeliness: A Handbook on Root Causes and Solutions to Address Data Backlogs*. v2.0, December 2025.
-
-- Gavi, WHO & UNICEF (2024). *Big Catch-Up: Monitoring and Reporting Form with Guidance*. March 2024.
-
-- Gavi, WHO & UNICEF (2024). *Big Catch-Up: Information Pack for Regional and Country Teams*. March 2024.
-
-- WHO African Region (2025, draft). *Standard Operating Procedure for Harmonizing Big Catch-Up (BCU) Routine Catch-Up, Monthly Administrative Data, and Data with eJRF Reports*. October 2025.
