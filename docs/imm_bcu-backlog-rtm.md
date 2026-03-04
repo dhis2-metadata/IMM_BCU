@@ -432,7 +432,7 @@ This option adds explicit BCU data elements to the existing RI form — or creat
 > **Note**
 > 
 > Any new form design in DHIS2 also implies updating paper-based vaccination registers and tally sheets. In [Somalia](https://www.unicef.org/digitalimpact/media/1231/file/Big%20Catch-Up%20Real%20Time%20Monitoring%20Learning%20Brief,%20Final%20EN.pdf.pdf), a change to BCU age bands in DHIS2 also required updating paper-based tally sheets at health facilities.
-> ![Somalia tally sheets](resources\image\Screenshot_somalia_hq.png)
+> ![Somalia tally sheets](resources/image/Screenshot_somalia_hq.png)
 
 
 
